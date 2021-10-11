@@ -1,0 +1,153 @@
+@import url("./styles.css");
+
+section#accueil {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	width: 100vw;
+	height: 80vh;
+	margin: 0;
+	background: linear-gradient(rgba(30, 143, 255, 0.7), rgba(255, 255, 255, 0.9)),
+		url("./images/empty-stadium-1.jpg") no-repeat center center/cover;
+}
+
+section#accueil h1 {
+	font-size: 1.5rem;
+	color: rgba(255, 255, 255, 0.946);
+	text-shadow: 0.1rem 0.1rem 0.1rem #000000;
+}
+
+section#accueil img {
+	width: 10rem;
+	height: 20rem;
+	animation: 5s linear 1s alternate slidein;
+	-webkit-animation: 5s linear 1s alternate slidein;
+}
+
+section#accueil a {
+	background-color: rgb(0, 0, 0);
+	color: rgb(30, 144, 255);
+	padding: 0.3rem 1.5rem;
+	border-radius: 1rem;
+	-webkit-border-radius: 1rem;
+	-moz-border-radius: 1rem;
+	-ms-border-radius: 1rem;
+	-o-border-radius: 1rem;
+	transition: 0.5s ease-in-out;
+	-webkit-transition: 0.5s ease-in-out;
+	-moz-transition: 0.5s ease-in-out;
+	-ms-transition: 0.5s ease-in-out;
+	-o-transition: 0.5s ease-in-out;
+}
+
+section#accueil a:hover {
+	background-color: rgb(30, 144, 255);
+	color: rgb(0, 0, 0);
+}
+
+#equipes,
+.images {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	margin: 1rem 0;
+	padding: 1.5rem;
+}
+
+.images {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	width: 90vw;
+	margin: 0 auto;
+	background-color: rgba(30, 143, 255, 0.0714);
+	color: rgb(24, 24, 24);
+	border-radius: 1rem 0 0;
+	-webkit-border-radius: 1rem 0 0;
+	-moz-border-radius: 1rem 0 0;
+	-ms-border-radius: 1rem 0 0;
+	-o-border-radius: 1rem 0 0;
+}
+
+.images > * {
+	width: clamp(10rem, 30rem, 100%);
+	height: 20rem;
+	margin: 1rem;
+}
+
+section h1 {
+	text-align: center;
+	margin: 1.5rem auto;
+}
+
+div.equipe img {
+	width: 13rem;
+	height: 10rem;
+	margin: 0.5rem 0.5rem 1rem;
+}
+
+div.equipe p {
+	display: flex;
+	justify-content: space-between;
+	font-size: 0.825rem;
+	color: rgb(30, 144, 255);
+	margin: 0.5rem 1rem;
+}
+
+p.description {
+	display: flex;
+	flex-direction: column;
+}
+
+p.description > * {
+	margin: 0.5rem 0;
+}
+
+p span {
+	color: #74021a;
+	font-size: 1.1rem;
+}
+
+div.equipe {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 1rem;
+	margin: 1rem 0;
+	width: 18rem;
+	background-color: rgb(240, 238, 238);
+	border-radius: 1rem;
+	-webkit-border-radius: 1rem;
+	-moz-border-radius: 1rem;
+	-ms-border-radius: 1rem;
+	-o-border-radius: 1rem;
+}
+
+footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 0.725rem;
+}
+
+@keyframes slidein {
+	from {
+		transform: translateY(-90vw);
+		-webkit-transform: translateY(-90vw);
+		-moz-transform: translateY(-90vw);
+		-ms-transform: translateY(-90vw);
+		-o-transform: translateY(-90vw);
+		z-index: -1;
+		opacity: 0;
+	}
+	to {
+		transform: translateY(0);
+		-webkit-transform: translateY(0);
+		-moz-transform: translateY(0);
+		-ms-transform: translateY(0);
+		-o-transform: translateY(0);
+		z-index: 1;
+		opacity: 1;
+	}
+}
